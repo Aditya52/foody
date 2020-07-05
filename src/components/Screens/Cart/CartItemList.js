@@ -42,7 +42,6 @@ const CartItemList = ({ navigation }) => {
               padding: 10,
               color: "#000",
               fontWeight: "bold",
-              fontFamily: "Roboto",
             }}
             onPress={() => {
               const jumpToAction = TabActions.jumpTo(TabConstants.DASHBAORD);

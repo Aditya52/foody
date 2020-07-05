@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Foody, Order food from nearby restaurants",
+    "githubUrl": "https://github.com/Aditya52/foody.git"
   }
 }
