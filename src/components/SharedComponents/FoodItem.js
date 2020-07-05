@@ -11,37 +11,34 @@ const FoodItem = ({ name, meta }) => {
   const cartIcon = ImageConstants["cooking"];
 
   return (
-    <View>
-      <CardLayout>
-        <View style={styles.content}>
-          <View style={styles.border}>
-            <Image style={styles.banner} source={imageUrl} />
-          </View>
-          <View style={styles.details}>
-            <Text style={[styles.name, { color: colors.text }]}>{name}</Text>
-            <Text style={styles.meta}>{meta.cousines}</Text>
-            <Text style={styles.meta}>
-              {`${meta.location} | ${meta.distance}`}
-            </Text>
-            <Text style={[styles.meta, { paddingTop: 10 }]}>
-              {`${meta.offer} \t ⭐ ${meta.ratings}`}
-            </Text>
-          </View>
+    <View style={{backgroundColor: "#fff", height: "100%"}}>
+      <View style={styles.content}>
+        <View style={styles.border}>
+          <Image style={styles.banner} source={imageUrl} />
         </View>
-      </CardLayout>
-      <CardLayout>
-        <View
-          style={{
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "#fff",
-          }}
-        >
-          <Image style={{ width: 200, height: 200 }} source={cartIcon}></Image>
-          <Text>Food items are in development</Text>
+        <View style={styles.details}>
+          <Text style={[styles.name, { color: colors.text }]}>{name}</Text>
+          <Text style={styles.meta}>{meta.cousines}</Text>
+          <Text style={styles.meta}>
+            {`${meta.location} | ${meta.distance}`}
+          </Text>
+          <Text style={[styles.meta, { paddingTop: 10 }]}>
+            {`${meta.offer} \t ⭐ ${meta.ratings}`}
+          </Text>
         </View>
-      </CardLayout>
+      </View>
+      <View
+        style={{
+          height: "100%",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#fff",
+        }}
+      >
+        <Image style={{ width: 200, height: 200 }} source={cartIcon}></Image>
+        <Text>Food items are in development</Text>
+      </View>
     </View>
   );
 };
